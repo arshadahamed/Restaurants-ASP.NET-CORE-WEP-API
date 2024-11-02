@@ -15,16 +15,19 @@ POST {{Restaurants.API_HostAddress}}/api/restaurants
 Content-Type: application/json
 
 {
-  "Name" : "Spicy Delights",
-  "Description" : "A Culinary experience",
-  "Category" : "Fine Dining",
+  "Name" : "Tasy Bites",
+  "Description" : "A WellKnowned Restaurants",
+  "Category" : "Internation Cuisine",
   "HasDelivery" : true,
   "ContactEmail" : "info@spicydelights.com",
-  "City" : "Harrow",
+  "ContactNumber" : "555-1234",
+  "City" : "New York",
   "Street" : "Warharm Road",
-  "PostalCode": "54321"
+  "PostalCode": "12-345"
 }
 
 ###
 
 GET {{Restaurants.API_HostAddress}}/api/restaurants/3
+ 
+###
