@@ -1,5 +1,5 @@
 @host = http://localhost
-@port = 5170
+@port = 7160
 
 @Restaurants.API_HostAddress = https://localhost:7160
 
