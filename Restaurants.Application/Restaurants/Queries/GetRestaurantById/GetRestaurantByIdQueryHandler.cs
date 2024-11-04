@@ -7,12 +7,12 @@ using Restaurants.Domain.Respositories;
 
 namespace Restaurants.Application.Restaurants.Queries.GetRestaurantById;
 
-public class GetRestaurantByIdQueryHandler (ILogger<CreateRestaurantCommandHandler> logger, IMapper mapper, IRestaurantsRepository restaurantsRepository) 
+public class GetRestaurantByIdQueryHandler (ILogger<GetRestaurantByIdQueryHandler> logger, IMapper mapper, IRestaurantsRepository restaurantsRepository) 
     : IRequestHandler<GetRestaurantByIdQuery, RestaurantDto?>
 {
     public async Task<RestaurantDto?> Handle(GetRestaurantByIdQuery request, CancellationToken cancellationToken)
     {
-        logger.LogInformation($"Getting Restaurant {request.Id}");
+        logger.LogInformation("Getting Restaurant {RestaurantId}", request.Id);
         var restaurant = await restaurantsRepository.GetByIdAsync(request.Id);
         var restaurantDto = mapper.Map<RestaurantDto?>(restaurant);
 

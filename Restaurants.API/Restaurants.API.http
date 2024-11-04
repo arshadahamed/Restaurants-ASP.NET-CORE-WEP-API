@@ -36,13 +36,13 @@ DELETE {{Restaurants.API_HostAddress}}/api/restaurants/7
 
 ###
 
-PATCH {{Restaurants.API_HostAddress}}/api/restaurants/6
+PATCH {{Restaurants.API_HostAddress}}/api/restaurants/8
 Content-Type: application/json
 
 {
-  "Name" : "Sample Patch",
-  "Description" : "This is a sample restaurant Description",
-  "HasDelivery" : true
+  "Name" : "Sample Patch2",
+  "Description" : "This is a sample restaurant Description 2",
+  "HasDelivery" : false
 
 }
 

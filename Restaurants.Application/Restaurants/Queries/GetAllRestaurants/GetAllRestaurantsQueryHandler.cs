@@ -7,7 +7,7 @@ using Restaurants.Domain.Respositories;
 
 namespace Restaurants.Application.Restaurants.Queries.GetAllRestaurants;
 
-public class GetAllRestaurantsQueryHandler(ILogger<CreateRestaurantCommandHandler> logger, IMapper mapper, IRestaurantsRepository restaurantsRepository) 
+public class GetAllRestaurantsQueryHandler(ILogger<GetAllRestaurantsQueryHandler> logger, IMapper mapper, IRestaurantsRepository restaurantsRepository) 
     : IRequestHandler<GetAllRestaurantsQuery, IEnumerable<RestaurantDto>>
 {
     public async Task<IEnumerable<RestaurantDto>> Handle(GetAllRestaurantsQuery request, CancellationToken cancellationToken)
