@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Restaurants.Application.Dishes.Dtos;
 using Restaurants.Domain.Entities;
@@ -26,4 +27,6 @@ public class GetDishByIdForRestaurantQueryHandler(ILogger<GetDishByIdForRestaura
         var result = mapper.Map<DishDto>(dish);
         return result;
     }
+
+   
 }
