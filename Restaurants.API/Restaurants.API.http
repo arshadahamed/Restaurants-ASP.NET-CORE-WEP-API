@@ -1,6 +1,6 @@
 @host = http://localhost
 @port = 7160
-@token = CfDJ8NxFxRDRP-9FvfL4_OavmvSFlds_SW88f7LBGQnkbtZoFtaxIKWCEAsYfH3zpm8DFdUjIhdGNeU-nZzCSnK33OoqnL5rRIZUl1XJCO8Uq_CPORi2mxchQqeHZB2YPf60kDtCFS4mgG5H5hxezSGBnYbHBnhitoT1vLp9UitQdw3sYLORrCTfNZG2vQoA7RrbUpKpQsl43LdPbayen5Sgj3tSoZxiIIvbIZpoinCQUUdKZk7icQRJwnCGf3iz7rnMqEdqOFjWphSgoAs9KaSItC3uXjOIDQKRtpdiKk372G782tmuHhbuo_aQ2wWloZqxKKWZe-UgsnpiVmhhg48t-CT81EJ_kWmrh1Ej0M2zcrtlSX7t8TI2UUGvGYeBwKDQDUDL3YLLsoQzZ19M_4APzZdSs_3OtXSdsBcVQ4XcoprdVGrXq5lanuLgMOAUR9w7MAUwXXYGUM47b_ik31qFl3BBNbLtltCwA7cQXZew2aDFH0AtU87J2Aq7xK48OVSgKhgY-8O4iYjtwwi_NzyOl4d26GFZMktmVIBTvjZzBBW8p9BKWd2pWn8BT5Sh2qmgELS8Wsw986JXtr2gASF0oX41fcvm9_TH9wi0tSfdf3T5K344cOLzwd2egg2g06NjI0gKddlHgs_EltH0MnLQF1OcoZyu9iUslVy-9fgrquU6m5NoEKLfTR9ladHRQ7gDnQ
+@token = CfDJ8NxFxRDRP-9FvfL4_OavmvTcf7QKqzfFk8iZIPAsAUvjOYnrnOSR1shhCgLPtyboTs8XmEdo6Ef8e7k0SzLTpk0G1sydaz0OP7iSHh_XX8AYaOTPaApAnngfuSHG_jZRTiVwfBp_MxAeKo5AF12WOK_Ag_gEO4bMXqwswykDcPmNNC89U4emfwxO2RH5CFWr-Dcav5tUWBwa1XllWlQKh49fQSyzd0LvDGNlP9EbDZxUdJ13qW-JBUUF0i4ATkoB1aGQwAK1Si0X9KeHF52vwE90Njy1AglWcWzy60L-YO28h0rMwM-39Ybjj2bzk65mX6wd0oNtUTvm8JxWgRVArL0TLMkHXdleW0_c_BnPlqhyM8g2X4NrajrbvP2p6CY3vrBMyMSAAWXlERXc3kyxafmzAL3daHxHQpqyLqLjaNPScAW62wpZ7CDdCWrT9-3PaNtA9PwuLNczt1womfGUJCkSThFkSQ8hcAPx2Zdi_4KXSL3x6TRD5Rk6U-S-Ukoq8cKyzfMTj-lSVHWeH_vBs6XZ0q8mHDtdqBiDOH_beorRdhb0kXR1H-QDTRqWlXydIuV0MO7aIZh_vg8T2WAqV7KzkKLrVPUAqEfPxXk7i37LLRdlMwERNvateolhxw02zrQ7tcXexdurqd6V_FtZgZ5whPihGEXKsH1rMMyy6HdUoWEwariKKwQ_v2bqzNabYA
 
 @Restaurants.API_HostAddress = https://localhost:7160
 
@@ -97,6 +97,16 @@ Content-Type: application/json
 {
   "email": "testuser@test.com",
   "password": "Password1!"
+}
+
+###
+
+PATCH {{Restaurants.API_HostAddress}}/api/identity/user
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{ 
+  "dateOfBirth": "2024-11-07",
+  "nationality": "Lankan"
 }
 
 ###
