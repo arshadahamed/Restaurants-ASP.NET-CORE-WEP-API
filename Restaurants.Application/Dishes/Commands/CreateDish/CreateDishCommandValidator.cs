@@ -11,7 +11,7 @@ public class CreateDishCommandValidator : AbstractValidator<CreateDishCommand>
             .WithMessage("Price must be a non-negative number.");
 
         RuleFor(dish => dish.KiloCalories)
-    .GreaterThanOrEqualTo(0)
-    .WithMessage("KiloCalories must be a non-negative number.");
+            .GreaterThanOrEqualTo(0)
+            .WithMessage("KiloCalories must be a non-negative number.");
     }
 }
