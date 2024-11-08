@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using Restaurants.Domain.Entities;
 using Restaurants.Domain.Exceptions;
 
-namespace Restaurants.Application.Users.Commands;
+namespace Restaurants.Application.Users.Commands.UpdateUserDetails;
 
 public class UpdateUserDetailsCommandHandler(ILogger<UpdateUserDetailsCommandHandler> logger,
     IUserContext userContext,
@@ -13,11 +13,11 @@ public class UpdateUserDetailsCommandHandler(ILogger<UpdateUserDetailsCommandHan
     public async Task Handle(UpdateUserDetailsCommand request, CancellationToken cancellationToken)
     {
         var user = userContext.GetCurrentUser();
-        
+
         logger.LogInformation("Updating User: {UserId}, with {@Request}", user!.Id, request);
-        
-        var dbUser = await userStore.FindByIdAsync(user!.Id,cancellationToken);
-        
+
+        var dbUser = await userStore.FindByIdAsync(user!.Id, cancellationToken);
+
         if (dbUser == null)
         {
             throw new NotFoundException(nameof(User), user!.Id);
