@@ -26,8 +26,13 @@ namespace Restaurants.Application.Users
             var userId = user.FindFirst(claim => claim.Type == ClaimTypes.NameIdentifier)!.Value;
             var email = user.FindFirst(claim => claim.Type == ClaimTypes.Email)!.Value;
             var roles = user.Claims.Where(claim => claim.Type == ClaimTypes.Role)!.Select(claim => claim.Value);
+            var nationality = user.FindFirst(claim => claim.Type == "Nationality")?.Value;
+            var dateOfBirthString = user.FindFirst(claim => claim.Type == "DateOfBirth")?.Value;
+            var dateOfBirth = dateOfBirthString == null 
+                ? (DateOnly?) null
+                :DateOnly.ParseExact(dateOfBirthString,"yyyy-MM-dd");
 
-            return new CurrentUser(userId, email, roles);
+            return new CurrentUser(userId, email, roles, nationality, dateOfBirth);
         }
     }
 }

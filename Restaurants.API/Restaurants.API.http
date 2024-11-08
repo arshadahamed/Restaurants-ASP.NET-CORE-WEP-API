@@ -1,6 +1,8 @@
 @host = http://localhost
 @port = 7160
-@token = CfDJ8NxFxRDRP-9FvfL4_OavmvQiV1mXZNYmgm2LgQeHIzSFb666v04VFmXzDIY5o-WNH5XkzEu5OBt0o-9XmJjd211nXnO3CL5I_tmrNRjQZQ9WF-SHIMVHif8XVmjgsp09tZC5IqILWrzXTEJxScZZ6o7TtWVdvP9sw0FRCKgNhUEyOucNY6OF_2veAcAx1tAnSnV_MlgGy0kO2H5wPnQemNEuCQqdnLmOrPQO5UpIastCUEkQcXXeuZLl3eylOLD1VRxSjBRwQVa15V6rCv7uSOEc3CeawIS4zOPTyNhOSgGmgbDwhrrKu0mGIPGFdOG1BIE17VdYuzLEHGN9u1q2kqsSvrXD-HHOJMT78ds72szArjF_OoPaneDe3ELTNIJNncnHhw5BMwrMc7fqldtp5A1zrUHniO4SX3uipbaQNx58DAlMY2O_VBAO0XNus1D-8YvLqIxGK9cKzdMa7VfbccPkYnqgemznd79pw_yH8Kiud0Wvpu70lWfig44yw1ncFKKzWsRbeYLwQI3-X9bb8a1Dve1qNRLp8M0q5ix5tkOzwz8nyc1Bo1EKic7Y1EirXqu5nlZoJnX_a6K7PsADu6lKzeojkBdXiXca0xusehykeXFQVeYQqJzDfZuQk72rAbFbx-1TpRBD3mRCNYORZ6yWe4orLdxRmFhvMtDY2WFp9ZH9vAyVtaJgewZ8TZwP2TixDoVHn3moorv4YAjsUxkGU12I0TV98QqDJBX79aqlvQwXrs8qnj4nYs84PZKiA_do7jorLYakfQn8sEPpV06-hgEakZ4dJ8AVmPBlGYNglWD2Nu9gW0h-nXTNanUL5VxUw9YCywVIfo3mJqXp7tBHR53Pyu-why-5aGYXJeyT1p_pLaB--XUxmYwiy922Kw
+@token = CfDJ8NxFxRDRP-9FvfL4_OavmvTH8ZxYDaIOLGhx5pwBemHmvrAzyuTSqKm5hRz6n4wVDI9Wv4EauwK7AAsiCTky-buAUORX5bp_HJQqO8_gqy5SePWJvWNBtYAMo_niYSgO296LRITBGuRliqdTLqZM0IKYPIPCOaOwdM7TAm-LghHfU3Tn8PYKDkkKyjHlxXx2OU8j7dDkSV-W9PeplbS0mJMguv-iiHo6UVu2H2wju0eSyxUgc2SMKBkNIEXIf2gYD6AlZ9VzzH2bapqO9v4y8D05-7gjrE1XPgVu0afBsiQ2kxDg8aW2nv0PwERqgzgefoJUpHPJEIBI4Bh5oJfv1ZAI0ykTEufSb-_WrLacFTVcfO_FS-qHpFJtaVkRjSoNlKn8rjXZPkjjwDx_9TO5QsUAlhWkVE58J8jOwksYgTkyAwcApt33swtYri2MHhkHonqOJrGqzgrUTFZMFqAap-lEu5_FM3OY9eoc9TK13lRdfQFv1owrkwyDBd4NrWFqvyeDxNU-eOnFEMVRTMseYzeFBX4ucNDaAKQUU0sT9gmGfKJNIjDKSLvZuyBqqh6U6kGFNJtfh80LQlEORDVkj_8rK0Gbi_LQZHHQx5Yzxq9NgYvAB241JCUVHjBakXL3e7urpjZO18cFyWyF_2mtGXIG72T_FRENVFXqx3Wnusjf4Dm5AxVeVnJ0d5aIyuyPGcrpad21ScHcYwxKSf69Rwn0_NTpeVb6ljd6W2_Gi9nqbNy4ftjd8huZ9MNdaTLpdpcRonHEHNUtv-7BweuUldY
+
+
 @Restaurants.API_HostAddress = https://localhost:7160
 
 GET {{Restaurants.API_HostAddress}}/api/restaurants
@@ -66,7 +68,7 @@ Content-Type: application/json
 ###
 
 GET {{Restaurants.API_HostAddress}}/api/restaurant/3/dishes
-
+Authorization: Bearer {{token}}
 ###
 
 GET {{Restaurants.API_HostAddress}}/api/restaurant/1/dishes/1
@@ -122,7 +124,7 @@ PATCH {{Restaurants.API_HostAddress}}/api/identity/user
 Content-Type: application/json
 Authorization: Bearer {{token}}
 { 
-  "dateOfBirth": "2020-10-10",
+  "dateOfBirth": "2010-10-10",
   "nationality": "French"
 }
 
