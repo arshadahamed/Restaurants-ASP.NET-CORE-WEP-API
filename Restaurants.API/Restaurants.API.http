@@ -1,15 +1,15 @@
 @host = http://localhost
 @port = 7160
-@token = CfDJ8NxFxRDRP-9FvfL4_OavmvTuOTStjxppDdhNMekqP0KfBa6kA0MGXNpDZgAm15Q4m7-DzvCQAl87na-hVnk7EjFu6d-ifelXeGfMQlg5DnQb4gBGkvcxSQamsZEj3LYMS9plxApCCiQ6BmC1wBi13CgKspZVOSbkUK_DG1pSph4UJW2cdeAqhTWY8gTQ00uCnWA3hI9EakKVcGP16YNlWFoJslzbSln4GeS_B1TCWRLhpHPsqS1Ojm5FFzk0ZikzAFRyyw_Ud1PwqGxwpeEcwKsvb6j7zwyZr6M7SnoHnFUUD5YTvM-NQpRJwEMx6d32R-BteJgOmjvtYMc8daNHl7UrbFEewSuQLfRCZiHTGAXYhCAjA2CYlug_Pl5oVP1ugSjVDS10xzCpRQcti7WA6ODVAvXEEg2N9sr1wJse5cUK5iP8T8zslGzPztK69z2OkBOvG_zATAEOV_lF_gd--447FRt5Y6L2_oL5m1BHR2lDeL52vzDuIaHyCN1d3yLF2hntevvH78tn7EiurTDiS7Aza03RMFRXMJ43FJ2f3bmBePmyzPcvR-aQ1vsLJpL6ZC2ngCZhTkJONZ1WVK1-4v6Lly3ZCckqIxmOD1J7OkrwfpwxLSf4K6DeoXasoWWKA0JQ736rDTPgMAESvD61zXAfqIFh1ljCwNV3jEyeNQxrywtbfuY0rd3pO12uRDGmo44S7fQaxKGAAmpUA_goGupuRSzy_JvwejOcPoz75o9Hz2MVpazAasXT6b83LVBLf9Bjgz3cD9_vvgkkvYYVVig
+@token = CfDJ8NxFxRDRP-9FvfL4_OavmvQiV1mXZNYmgm2LgQeHIzSFb666v04VFmXzDIY5o-WNH5XkzEu5OBt0o-9XmJjd211nXnO3CL5I_tmrNRjQZQ9WF-SHIMVHif8XVmjgsp09tZC5IqILWrzXTEJxScZZ6o7TtWVdvP9sw0FRCKgNhUEyOucNY6OF_2veAcAx1tAnSnV_MlgGy0kO2H5wPnQemNEuCQqdnLmOrPQO5UpIastCUEkQcXXeuZLl3eylOLD1VRxSjBRwQVa15V6rCv7uSOEc3CeawIS4zOPTyNhOSgGmgbDwhrrKu0mGIPGFdOG1BIE17VdYuzLEHGN9u1q2kqsSvrXD-HHOJMT78ds72szArjF_OoPaneDe3ELTNIJNncnHhw5BMwrMc7fqldtp5A1zrUHniO4SX3uipbaQNx58DAlMY2O_VBAO0XNus1D-8YvLqIxGK9cKzdMa7VfbccPkYnqgemznd79pw_yH8Kiud0Wvpu70lWfig44yw1ncFKKzWsRbeYLwQI3-X9bb8a1Dve1qNRLp8M0q5ix5tkOzwz8nyc1Bo1EKic7Y1EirXqu5nlZoJnX_a6K7PsADu6lKzeojkBdXiXca0xusehykeXFQVeYQqJzDfZuQk72rAbFbx-1TpRBD3mRCNYORZ6yWe4orLdxRmFhvMtDY2WFp9ZH9vAyVtaJgewZ8TZwP2TixDoVHn3moorv4YAjsUxkGU12I0TV98QqDJBX79aqlvQwXrs8qnj4nYs84PZKiA_do7jorLYakfQn8sEPpV06-hgEakZ4dJ8AVmPBlGYNglWD2Nu9gW0h-nXTNanUL5VxUw9YCywVIfo3mJqXp7tBHR53Pyu-why-5aGYXJeyT1p_pLaB--XUxmYwiy922Kw
 @Restaurants.API_HostAddress = https://localhost:7160
 
 GET {{Restaurants.API_HostAddress}}/api/restaurants
-
+Authorization: Bearer {{token}}
 
 
 ###
 
-GET {{Restaurants.API_HostAddress}}/api/restaurants/3
+GET {{Restaurants.API_HostAddress}}/api/restaurants/1
 Authorization: Bearer {{token}}
 ###
 
@@ -122,8 +122,9 @@ PATCH {{Restaurants.API_HostAddress}}/api/identity/user
 Content-Type: application/json
 Authorization: Bearer {{token}}
 { 
-  "dateOfBirth": "2024-11-07",
-  "nationality": "Lankan"
+  "dateOfBirth": "2020-10-10",
+  "nationality": "French"
 }
 
 ###
+
