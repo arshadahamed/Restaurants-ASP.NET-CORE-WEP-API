@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Azure.Core;
+using Microsoft.EntityFrameworkCore;
 using Restaurants.Domain.Entities;
 using Restaurants.Domain.Respositories;
 using Restaurants.Infrastructure.Persistence;
+using System.ComponentModel;
 
 namespace Restaurants.Infrastructure.Repositories;
 
@@ -26,7 +28,18 @@ internal class RestaurantsRepository(RestaurantsDbContext dbContext)
         var restaurants = await dbContext.Restaurants.ToListAsync();
         return restaurants;
     }
+    public async Task<IEnumerable<Restaurant>> GetAllMatchingAsync(string? searchPharse)
+    {
+        var searchPharseLower = searchPharse?.ToLower();
 
+        var restaurants = await dbContext
+             .Restaurants
+             .Where(r => searchPharseLower == null || (r.Name.ToLower().Contains(searchPharseLower)
+                                                    || r.Description.ToLower().Contains(searchPharseLower)))
+            .ToListAsync();
+        return restaurants;
+    }
+    
     public async Task<Restaurant?> GetByIdAsync(int id)
     {
         var restaurant = await dbContext.Restaurants
