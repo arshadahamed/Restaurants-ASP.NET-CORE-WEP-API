@@ -1,6 +1,6 @@
 @host = http://localhost
 @port = 7160
-@token = CfDJ8NxFxRDRP-9FvfL4_OavmvTH8ZxYDaIOLGhx5pwBemHmvrAzyuTSqKm5hRz6n4wVDI9Wv4EauwK7AAsiCTky-buAUORX5bp_HJQqO8_gqy5SePWJvWNBtYAMo_niYSgO296LRITBGuRliqdTLqZM0IKYPIPCOaOwdM7TAm-LghHfU3Tn8PYKDkkKyjHlxXx2OU8j7dDkSV-W9PeplbS0mJMguv-iiHo6UVu2H2wju0eSyxUgc2SMKBkNIEXIf2gYD6AlZ9VzzH2bapqO9v4y8D05-7gjrE1XPgVu0afBsiQ2kxDg8aW2nv0PwERqgzgefoJUpHPJEIBI4Bh5oJfv1ZAI0ykTEufSb-_WrLacFTVcfO_FS-qHpFJtaVkRjSoNlKn8rjXZPkjjwDx_9TO5QsUAlhWkVE58J8jOwksYgTkyAwcApt33swtYri2MHhkHonqOJrGqzgrUTFZMFqAap-lEu5_FM3OY9eoc9TK13lRdfQFv1owrkwyDBd4NrWFqvyeDxNU-eOnFEMVRTMseYzeFBX4ucNDaAKQUU0sT9gmGfKJNIjDKSLvZuyBqqh6U6kGFNJtfh80LQlEORDVkj_8rK0Gbi_LQZHHQx5Yzxq9NgYvAB241JCUVHjBakXL3e7urpjZO18cFyWyF_2mtGXIG72T_FRENVFXqx3Wnusjf4Dm5AxVeVnJ0d5aIyuyPGcrpad21ScHcYwxKSf69Rwn0_NTpeVb6ljd6W2_Gi9nqbNy4ftjd8huZ9MNdaTLpdpcRonHEHNUtv-7BweuUldY
+@token = CfDJ8NxFxRDRP-9FvfL4_OavmvRD-YbvoQCCrS1YIvjYclNxW5g3MAwmj8lg3qemdsKLZqNSECpMBk06KDypzF6Vr4ePaFbQzS7ejbZsdYyCkW91dMonWoj9qkNnLeC7zioNtrXN1Dd4sK10U9wm-xldjE11xSKGh_avF_9w7UAw3B5cD_fJ_9jRIIyq89ihnCmxbETbo9sOCIQp_lcFlHPygF2reW5nBEkRm50TuWID7YdJaNQct6ORRvTYrbAvxHWNj4M1oe0yZM7eSeClDKtpjFgZp4dyJrpqIWgBEpUVLbKodA5eulpGRiprKUFI0UO8D3pAhJIVb0G9qjRIckZ5OOmf5bH3LK62bj-aRw1NTupSw3cWV3MHK5Dx9gKlk41fv4ZZw6s5mT33nkgvQoPqw7l27w15F3DvpLb8AzriiF0zLMAMD0-Na33TcTvs5VyTAhKtT5AzYFfco0XhibLb_8fBPLfIMecZpiYHnthu9Y_JudpaMsaPT3rdQPje9z9Ubsvp5cM6GQzA8BheGjOeds86rT2_7UnUEpExmh6CviPA5i5-Jyd-pguCg5xC1LQFZ2i6olgc-vGe4yBOjnkIE1FM6wwWjsm-5EXZ2tT54KFQp5G8I25jeC_ZA-8xGn4kjuhQ9bGld6RjzqrwEJG9U0xXYXEZS7QvP8-o1-FSZ47qNqKjz4Ed6d8dDfIRW_m9L7eJUU8GnOs6ePKCu5ltRup1_vrxVTDo4bUZROVOqpx2wgtGNEmCCroIHmDiPW4KG3S8PMFNLIpIjutrAU2pQgPA6-66Pa_vVoebzs5LNOA3p6eITKKyBfbJVIpwj2CoDcHZ8XY49vvAGB1L9iScckOX546VwzAAADuMUPe-T58UyEkL3paUm63AGglr38CBfA
 
 
 @Restaurants.API_HostAddress = https://localhost:7160
@@ -20,15 +20,15 @@ Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-  "Name" : "Naanas Restaurants",
-  "Description" : "A Authentic Sri Lankan Foods",
+  "Name" : "Malay Restaurants",
+  "Description" : "A Authentic Malasian Foods",
   "Category" : "Indian",
   "HasDelivery" : true,
-  "ContactEmail" : "info@naanas.com",
-  "ContactNumber" : "0372253198",
-  "City" : "Galgamuwa",
-  "Street" : "Kurunegala Road",
-  "PostalCode": "54-321"
+  "ContactEmail" : "info@malayres.com",
+  "ContactNumber" : "0812202748",
+  "City" : "Kandy",
+  "Street" : "Main Road",
+  "PostalCode": "12-345"
 }
 
 ###
