@@ -2,7 +2,7 @@
 
 namespace Restaurants.Infrastructure.Authorization.Requirements;
 
-public class CreateMultipleRestaurantsRequirement(int minimumRestaurantsCreated) :  IAuthorizationRequirement
+public class CreatedMultipleRestaurantsRequirement(int minimumRestaurantsCreated) :  IAuthorizationRequirement
 {
     public int MinimumRestaurantsCreated { get; } = minimumRestaurantsCreated;
 } 

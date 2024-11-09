@@ -37,7 +37,7 @@ GET {{Restaurants.API_HostAddress}}/api/restaurants/3
  
 ###
 
-DELETE {{Restaurants.API_HostAddress}}/api/restaurants/9
+DELETE {{Restaurants.API_HostAddress}}/api/restaurants/13
 Authorization: Bearer {{token}}
 ###
 
